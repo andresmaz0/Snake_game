@@ -1,5 +1,4 @@
 import pygame, sys, random
-from pygame.locals import*
 
 #iniciacion de pygame
 pygame.init()
@@ -18,11 +17,11 @@ clock = pygame.time.Clock()
 fps=30
 
 #cargando imagenes
-icon = pygame.image.load("Snake game/imagenes/serpiente.png")
+icon = pygame.image.load("app/imagenes/serpiente.png")
 pygame.display.set_icon(icon)
-background = pygame.image.load("Snake game/imagenes/fondo_d.PNG")
-head = pygame.image.load("Snake game/imagenes/head_s.png")
-dona_r = pygame.image.load("Snake game/imagenes/dona_rosa.png")
+background = pygame.image.load("app/imagenes/fondo_d.PNG")
+head = pygame.image.load("app/imagenes/head_s.png")
+dona_r = pygame.image.load("app/imagenes/dona_rosa.png")
 
 #Se crea esta clase hija para que pueda heredar todas las herramientas para usar sprites
 class Player(pygame.sprite.Sprite):
@@ -104,7 +103,7 @@ grupo_donas.add(dona_rosa)
 while True:
     clock.tick(fps)
     for event in pygame.event.get():
-        if event.type == QUIT:
+        if event.type == pygame.QUIT:
             pygame.quit()
             sys.exit()
     #actualizando los sprites
