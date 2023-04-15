@@ -2,9 +2,9 @@ import pygame, sys, random
 
 #Se crea esta clase hija para que pueda heredar todas las herramientas para usar sprites
 class Player(pygame.sprite.Sprite):
-    def __init__(self,width,height,head):
+    def __init__(self,width:int,height:int,image):
         super().__init__()
-        self.image = head
+        self.image = image
         self.width = width
         self.height = height
         #obtengo el rectangulo de la imagen head
