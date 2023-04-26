@@ -19,12 +19,11 @@ clock = pygame.time.Clock()
 fps=30
 
 #cargando imagenes
-icon = pygame.image.load("app/imagenes/serpiente.png")
+icon = pygame.image.load("snake_game/app/imagenes/serpiente.png")
 pygame.display.set_icon(icon)
-background = pygame.image.load("app/imagenes/fondo_d.PNG")
-head = pygame.image.load("app/imagenes/head_s.png")
-dona_r = pygame.image.load("app/imagenes/dona_rosa.png")
-
+background = pygame.image.load("snake_game/app/imagenes/fondo_d.PNG")
+head = pygame.image.load("snake_game/app/imagenes/head_s.png")
+dona_r = pygame.image.load("snake_game/app/imagenes/dona_rosa.png")
 #grupo de sprites
 sprites = pygame.sprite.Group()
 jugador = Player(width=width,height=height,image=head)
