@@ -2,50 +2,50 @@ import pygame, sys, random
 from class_player import Player
 from class_donas import Donas
 
-#iniciacion de pygame
+#Pygame initiation
 pygame.init()
 
-#Estableciendo dimensiones de la pantalla
+#Setting screen dimensions
 width,height=690,590
 screen = pygame.display.set_mode((width,height))
 pygame.display.set_caption("Snake Game")
 
-#variables movimiento de pantalla
+#Screen movement variables
 x=0
 x_relativa=0
 
-#fps
+#Fps
 clock = pygame.time.Clock()
 fps=30
 
-#cargando imagenes
+#Loading pictures
 icon = pygame.image.load("snake_game/app/imagenes/serpiente.png")
 pygame.display.set_icon(icon)
 background = pygame.image.load("snake_game/app/imagenes/fondo_d.PNG")
 head = pygame.image.load("snake_game/app/imagenes/head_s.png")
 dona_r = pygame.image.load("snake_game/app/imagenes/dona_rosa.png")
-#grupo de sprites
+#Sprites group
 sprites = pygame.sprite.Group()
 jugador = Player(width=width,height=height,image=head)
 sprites.add(jugador)
 
-#añadiendo las donas
+#Adding donas
 grupo_donas = pygame.sprite.Group()
 dona_rosa = Donas(width=width,height=height,image=dona_r)
 grupo_donas.add(dona_rosa)
 
-#bucle del juego
+#Game loop
 while True:
     clock.tick(fps)
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             pygame.quit()
             sys.exit()
-    #actualizando los sprites
+    #Updating sprites
     sprites.update()
     screen.fill((255,255,255))
 
-    #realizando colision de sprites
+    #Performing sprites collision
     colision = pygame.sprite.spritecollide(jugador,grupo_donas,False)
     if colision:
         dona_rosa.reaparicion()
