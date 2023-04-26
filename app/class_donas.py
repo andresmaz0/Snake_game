@@ -6,11 +6,11 @@ class Donas (pygame.sprite.Sprite):
         self.image = image
         self.width = width
         self.height = height
-        #obtengo el rectangulo de la imagen head
+        #I get the rectangle of the image head
         self.rect = self.image.get_rect()
         self.reaparicion()
 
-    #metodo para reapiricion de dona despues de colision
+    #Method for dona reappearance after collision
     def reaparicion(self):
         self.rect.x = random.randrange(self.width - self.rect.width)
         self.rect.y = random.randrange(self.height - self.rect.height)
