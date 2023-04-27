@@ -28,10 +28,10 @@ dona_r = pygame.image.load("snake_game/app/imagenes/dona_rosa.png")
 ball_body = pygame.image.load("snake_game/app/imagenes/circulo_body.png")
 #Sprites group
 sprites = pygame.sprite.Group()
-jugador = Player(width=width,height=height,image=head)
-sprites.add(jugador)
 cuerpo = body(image=ball_body)
 sprites.add(cuerpo)
+jugador = Player(width=width,height=height,image=head)
+sprites.add(jugador)
 
 #Adding donas
 grupo_donas = pygame.sprite.Group()
