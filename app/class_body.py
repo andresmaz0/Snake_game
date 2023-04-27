@@ -7,12 +7,10 @@ class body (pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
     
     #Updating the position of my body
-    def posicion(self,head_x:int,head_y:int,colisiones:int):
-        self.colisiones = colisiones
-        self.head_x = head_x
-        self.head_y = head_y
-        if colisiones >= 1:
-            self.rect.x = self.head_x + 5
-            self.rect.y = self.head_y - 20 - ((colisiones-1)*10)
+    def posicion(self,index_x:int,index_y:int):
+        self.index_x = index_x
+        self.index_y = index_y
+        self.rect.x = self.index_x + 5
+        self.rect.y = self.index_y - 20
         
         
