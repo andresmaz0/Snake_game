@@ -29,9 +29,13 @@ background = pygame.image.load("snake_game/app/imagenes/fondo_d.PNG")
 head = pygame.image.load("snake_game/app/imagenes/head_s.png")
 dona_r = pygame.image.load("snake_game/app/imagenes/dona_rosa.png")
 ball_body = pygame.image.load("snake_game/app/imagenes/circulo_body.png")
+
+#Body group
+cuerpo = body(image=ball_body)
+grupo_cuerpo = pygame.sprite.Group()
+
 #Sprites group
 sprites = pygame.sprite.Group()
-cuerpo = body(image=ball_body)
 jugador = Player(width=width,height=height,image=head)
 sprites.add(jugador)
 
@@ -55,7 +59,8 @@ while True:
     colision = pygame.sprite.spritecollide(jugador,grupo_donas,False)
     if colision:
         dona_rosa.reaparicion()
-        sprites.add(cuerpo)
+        cuerpo = body(image=ball_body)
+        grupo_cuerpo.add(cuerpo)
         n_colisiones+=1
 
     """x_relativa = x % background.get_rect().width
@@ -63,8 +68,9 @@ while True:
     if x_relativa<width:
         screen.blit(background,(x_relativa,0))
     x -= 0.8"""
-    sprites.draw(screen)
+    grupo_cuerpo.draw(screen)
     grupo_donas.draw(screen)
+    sprites.draw(screen)
     cuerpo.posicion(head_x=jugador.rect.x,head_y=jugador.rect.top,colisiones=n_colisiones)
     jugador.movimiento()
     pygame.display.update()
