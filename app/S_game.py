@@ -25,7 +25,7 @@ pygame.display.set_icon(icon)
 background = pygame.image.load("snake_game/app/imagenes/fondo_d.PNG")
 head = pygame.image.load("snake_game/app/imagenes/head_s.png")
 dona_r = pygame.image.load("snake_game/app/imagenes/dona_rosa.png")
-
+ball_body = pygame.image.load("snake_game/app/imagenes/circulo_body.png")
 #Sprites group
 sprites = pygame.sprite.Group()
 jugador = Player(width=width,height=height,image=head)
