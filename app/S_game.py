@@ -19,7 +19,7 @@ clock = pygame.time.Clock()
 fps=30
 
 #snake body color
-color_body = (184,205,2)
+body_color = (184,205,2)
 
 #Loading pictures
 icon = pygame.image.load("snake_game/app/imagenes/serpiente.png")
