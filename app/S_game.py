@@ -14,6 +14,8 @@ pygame.display.set_caption("Snake Game")
 #Screen movement variables
 x=0
 x_relativa=0
+
+#The number of collisions
 n_colisiones=0
 
 #Fps
@@ -63,7 +65,7 @@ while True:
     x -= 0.8"""
     sprites.draw(screen)
     grupo_donas.draw(screen)
-    cuerpo.posicion(head_x=jugador.rect.x,head_y=jugador.rect.top)
+    cuerpo.posicion(head_x=jugador.rect.x,head_y=jugador.rect.top,colisiones=n_colisiones)
     jugador.movimiento()
     pygame.display.update()
 
