@@ -1,6 +1,7 @@
 import pygame, sys, random
 from class_player import Player
 from class_donas import Donas
+from class_body import body
 
 #Pygame initiation
 pygame.init()
