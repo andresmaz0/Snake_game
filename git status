@@ -1,0 +1,83 @@
+[33mcommit d711773a6db866a9fec550f7d6b15636c607883b[m[33m ([m[1;36mHEAD -> [m[1;32m01setup[m[33m, [m[1;31morigin/01setup[m[33m, [m[1;32mbody[m[33m)[m
+Author: andresmaz0 <amazobo@eafit.edu.co>
+Date:   Wed Apr 26 02:25:38 2023 -0500
+
+    Changed all the comments to English
+
+[33mcommit 008057cc202471b67937fe4a53510c3e31a99e70[m
+Author: andresmaz0 <amazobo@eafit.edu.co>
+Date:   Wed Apr 26 02:22:28 2023 -0500
+
+    Changed all comments to English
+
+[33mcommit 85a97a3402c7ef8790bfa8dc22523c62834bbf1d[m
+Author: andresmaz0 <amazobo@eafit.edu.co>
+Date:   Wed Apr 26 02:19:05 2023 -0500
+
+    Changing to English all the comments
+
+[33mcommit 111fbec942187f5dd0ae0563b895ba5e74d4c677[m
+Author: andresmaz0 <amazobo@eafit.edu.co>
+Date:   Wed Apr 26 02:09:42 2023 -0500
+
+    Changes in load direction on my png files
+
+[33mcommit d4ff0055e954e8c00ac0c4d81bc8e93ddd96702c[m
+Author: andresmaz0 <amazobo@eafit.edu.co>
+Date:   Sat Apr 15 13:16:43 2023 -0500
+
+    Imported class donas
+
+[33mcommit 67c0c95e3d21581a9809b0b278860b7b4cced582[m
+Author: andresmaz0 <amazobo@eafit.edu.co>
+Date:   Sat Apr 15 13:15:27 2023 -0500
+
+    Modified var head instead of image
+
+[33mcommit f384df0fbe0adf0e829f147012cd778bc1c11ea4[m
+Author: andresmaz0 <amazobo@eafit.edu.co>
+Date:   Sat Apr 15 13:14:37 2023 -0500
+
+    Added class Donas
+
+[33mcommit a6fb14cfec21b6dc005b5dc8f8eb9b0ff6342311[m
+Author: andresmaz0 <amazobo@eafit.edu.co>
+Date:   Sat Apr 15 12:56:39 2023 -0500
+
+    Moved class pleyer to new file
+
+[33mcommit e6a932446ade52522cfbcdea1d27dc578fcd239e[m
+Author: andresmaz0 <amazobo@eafit.edu.co>
+Date:   Tue Apr 11 12:47:22 2023 -0500
+
+    Deleting the unnecessary import format
+
+[33mcommit 69ed8c2045e41fdb62fa9164ef515fd8c5161a6e[m
+Author: andresmaz0 <amazobo@eafit.edu.co>
+Date:   Tue Apr 11 12:06:14 2023 -0500
+
+    Moved files to app
+
+[33mcommit 7b8a0e51a35a83a6887d29c5c8dcdf3393120e85[m
+Author: andresmaz0 <amazobo@eafit.edu.co>
+Date:   Tue Apr 11 12:02:51 2023 -0500
+
+    First main
+
+[33mcommit b5231ac8d0ff238715e6deb73e5836ea4932d221[m
+Author: andresmaz0 <amazobo@eafit.edu.co>
+Date:   Tue Apr 11 12:02:34 2023 -0500
+
+    Added images
+
+[33mcommit 3569639a5a40610a69d40c486a522adec61e9de6[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: andresmaz0 <amazobo@eafit.edu.co>
+Date:   Tue Apr 11 11:03:24 2023 -0500
+
+    added proyect.toml file
+
+[33mcommit d4229dfffeff16d57c7cfccfc9c8091d77a3c487[m
+Author: andresmaz0 <88501273+andresmaz0@users.noreply.github.com>
+Date:   Tue Apr 11 10:35:58 2023 -0500
+
+    Initial commit
