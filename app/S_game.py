@@ -30,6 +30,8 @@ ball_body = pygame.image.load("snake_game/app/imagenes/circulo_body.png")
 sprites = pygame.sprite.Group()
 jugador = Player(width=width,height=height,image=head)
 sprites.add(jugador)
+cuerpo = body(image=ball_body)
+sprites.add(cuerpo)
 
 #Adding donas
 grupo_donas = pygame.sprite.Group()
@@ -59,6 +61,7 @@ while True:
     x -= 0.8"""
     sprites.draw(screen)
     grupo_donas.draw(screen)
+    cuerpo.posicion(head_x=jugador.rect.x,head_y=jugador.rect.top)
     jugador.movimiento()
     pygame.display.update()
 
