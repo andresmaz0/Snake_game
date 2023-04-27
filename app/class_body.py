@@ -11,5 +11,5 @@ class body (pygame.sprite.Sprite):
         self.head_x = head_x
         self.head_y = head_y
         self.rect.x = self.head_x + 5
-        self.rect.y = self.head_y - 30
+        self.rect.y = self.head_y - 20
         
