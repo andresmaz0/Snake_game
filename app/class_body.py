@@ -6,10 +6,10 @@ class body (pygame.sprite.Sprite):
         self.image = image
         self.head_x = head_x
         self.head_y = head_y
-        #I get the rectangle of the image head
         self.rect = self.image.get_rect()
     
-    """def posicion(self):
-        self.rect.x = 
-        self.rect.y = self.velocidad_y"""
+    #Updating the position of my body
+    def posicion(self):
+        self.rect.x = self.head_x + 5
+        self.rect.y = self.head_y - 30
         
