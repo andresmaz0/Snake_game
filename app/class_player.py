@@ -10,7 +10,7 @@ class Player(pygame.sprite.Sprite):
         #I get the rectangle of the image head
         self.rect = self.image.get_rect()
         self.rect.center = (width//2,height//2)
-        #velocidad inicial
+        #initial velocity
         self.velocidad_x = 0
         self.velocidad_y = 0
 
