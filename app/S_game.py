@@ -78,7 +78,7 @@ while True:
     if len(cuerpo_completo)>0:
         cuerpo_completo[0].posicion(index_x=jugador.rect.x,index_y=jugador.rect.top)
 
-    #Is important the order of which group is drawed first
+    #Is important the order of which group is drawed first.
     grupo_cuerpo.draw(screen)
     grupo_donas.draw(screen)
     sprites.draw(screen)
